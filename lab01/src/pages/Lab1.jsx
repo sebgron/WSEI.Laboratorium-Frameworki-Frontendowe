@@ -1,8 +1,8 @@
 import React from 'react';
-import { data } from './data/module-data.js';
-import CarProfile from './components/CarProfile';
+import { data } from '../data/module-data';
+import CarProfile from '../components/CarProfile';
 
-function App() {
+const Lab1 = () => {
   return (
     <div>
         <h1>Lista Samochodów</h1>
@@ -13,4 +13,4 @@ function App() {
 );
 }
 
-export default App;
+export default Lab1;
