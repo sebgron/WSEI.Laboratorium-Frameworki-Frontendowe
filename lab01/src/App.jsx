@@ -4,6 +4,7 @@ import {createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home';
 import Lab1 from './pages/Lab1';
 import Lab2 from './pages/Lab2';
+import Lab3 from './pages/Lab3';
 import NotFound from './pages/NotFound';
 
 const menuItems = [
@@ -28,6 +29,13 @@ const menuItems = [
         urlPattern: '/lab2/:id',
         element: <Lab2 />,
     },
+    {
+        id: 4,
+        label: 'Laboratorium 3',
+        url: '/lab3/1', 
+        urlPattern: '/lab3',
+        element: <Lab3 />,
+    }
 ];
 
 const router = createBrowserRouter([
@@ -42,6 +50,10 @@ const router = createBrowserRouter([
     {
         path: '/lab2/:id',
         element: <Lab2 />,
+    },
+    {
+        path: '/lab3/:id',
+        element: <Lab3 />,
     },
     {
         path: '/not-found',
